@@ -2,7 +2,7 @@
 #include"MAD.h"
 #include"Dollar.h"
 #include"Euro.h"
-#include  <iostream>
+#include<iostream>
 #include<typeinfo>
 #include<assert.h>
 using namespace std;

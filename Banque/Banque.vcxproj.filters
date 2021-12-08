@@ -24,9 +24,6 @@
     <ClInclude Include="Devise.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Transaction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -72,9 +69,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Devise.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Transaction.cpp">

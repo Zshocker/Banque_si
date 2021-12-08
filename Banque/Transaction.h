@@ -17,5 +17,6 @@ namespace Banque {
 		void print_detail()const;
 		void print_Montant()const;
 		virtual void Print()const=0;
+		virtual ~Transaction();
 	};
 }

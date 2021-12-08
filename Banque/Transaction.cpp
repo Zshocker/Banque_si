@@ -19,3 +19,8 @@ void Banque::Transaction::print_Montant() const
 {
 	Val->afficher();
 }
+
+Banque::Transaction::~Transaction()
+{
+	delete Val;
+}
