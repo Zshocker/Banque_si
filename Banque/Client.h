@@ -15,6 +15,7 @@ namespace Banque {
 	public:
 		Client(string, string, string);
 		void add_Compte(Compte*);
+		Compte& Select_Compte();
 		void Afficher()const;
 		~Client();
 	};

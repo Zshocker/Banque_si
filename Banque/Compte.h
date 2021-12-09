@@ -17,7 +17,9 @@ namespace Banque {
 		vector<Transaction*> Trans;
 	public:
 		Compte(Client*, Devise*);
+		Compte(Devise*);
 		Compte(const Compte&);
+		void Link_Client(Client*);
 		virtual void crediter(Devise* M);
 		virtual bool debiter(Devise* M)=0;
 		bool verser(Devise* M, Compte& C);

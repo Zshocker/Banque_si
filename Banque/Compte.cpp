@@ -15,6 +15,12 @@ Banque::Compte::Compte(Client* titu, Devise* sol) :numcompte(++count)
 	this->titulaire->add_Compte(this);
 }
 
+Banque::Compte::Compte(Devise*sol) :numcompte(++count)
+{
+	this->solde = sol;
+	this->titulaire = NULL;
+}
+
 void Banque::Compte::crediter(Devise* M)
 {
 	*(this->solde) = *(this->solde) + *M;
@@ -35,6 +41,12 @@ Banque::Compte::Compte(const Compte& c) :numcompte(c.numcompte)
 {
 	this->solde = c.solde;
 	this->titulaire = c.titulaire;
+}
+
+void Banque::Compte::Link_Client(Client*titu)
+{
+	this->titulaire = titu;
+	this->titulaire->add_Compte(this);
 }
 
 bool Banque::Compte::verser(Devise* M, Compte& C)
