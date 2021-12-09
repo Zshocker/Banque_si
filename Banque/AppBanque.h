@@ -21,5 +21,6 @@ namespace Banque {
 		Devise* Read_Devise();
 		void Select_Client();
 		void Select_Compte(Client&);
+		~AppBanque();
 	};
 }

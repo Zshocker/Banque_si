@@ -192,3 +192,11 @@ void Banque::AppBanque::Select_Compte(Client&E)
 	Compte &Com=E.Select_Compte();
 	ManipCompte(Com);
 }
+
+Banque::AppBanque::~AppBanque()
+{
+	for (int i = 0; i < Clients.size(); i++)
+	{
+		delete Clients[i];
+	}
+}
